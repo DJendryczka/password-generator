@@ -2,6 +2,8 @@ body {
     margin: 0;
     margin: 0;
     color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    
 }
 
 main {
@@ -16,10 +18,29 @@ main {
     background-color: #1F2937;
 }
 
+h1 {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    font-size: 40px;
+}
+#green {
+    color: #10B981;
+}
+
+button {
+    margin-top: 40px;
+    padding: 9px 17px 9px 15px;
+    background-color: #10B981;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+
 .generator {
     width: 450px;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 120px;
 }
 
 .result-container {
@@ -38,5 +59,9 @@ main {
     margin: 30px 0;
     border-radius: 6px;
     background-color: #273549;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #10B981;
     
 }
