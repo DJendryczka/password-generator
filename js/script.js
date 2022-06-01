@@ -8,6 +8,7 @@ let passOne = document.getElementById("pass-1");
 let passTwoo = document.getElementById("pass-2");
 let passTree = document.getElementById("pass-3");
 let passFour = document.getElementById("pass-4");
+let allChars = lowCaseChars + capitalCaseChars + numberChars + simbolChars;
 
 
 function getLowCaseChar() {
@@ -33,7 +34,7 @@ function getSimbolChar() {
 
 
 function generatePassword() {
-
+    passOne.textContent = " "
     passOne.textContent += getNumberChar()
     passOne.textContent += getLowCaseChar()
     passOne.textContent += getCapitalChar()
@@ -50,6 +51,7 @@ function generatePassword() {
     passOne.textContent += getSimbolChar()
     passOne.textContent += getLowCaseChar()
 
+    passTwoo.textContent = " "
     passTwoo.textContent += getSimbolChar()
     passTwoo.textContent += getLowCaseChar()
     passTwoo.textContent += getSimbolChar()
@@ -66,6 +68,7 @@ function generatePassword() {
     passTwoo.textContent += getNumberChar()
     passTwoo.textContent += getCapitalChar()
 
+    passTree.textContent = " "
     passTree.textContent += getSimbolChar()
     passTree.textContent += getLowCaseChar()
     passTree.textContent += getSimbolChar()
@@ -82,6 +85,7 @@ function generatePassword() {
     passTree.textContent += getNumberChar()
     passTree.textContent += getSimbolChar()
 
+    passFour.textContent = " "
     passFour.textContent += getNumberChar()
     passFour.textContent += getLowCaseChar()
     passFour.textContent += getCapitalChar()
