@@ -65,3 +65,40 @@ button {
     color: #10B981;
     
 }
+
+@media screen and (max-width: 700px) {
+
+    main {
+        width: 355px;
+        height: auto;
+    }
+    .result-container {
+        width: 350px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid  #2F3E53;
+    }
+
+    .generator {
+        width: 350px;
+        height: 300px;
+        margin-top: 120px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    button {
+        margin-left: 90px;
+    }
+}
