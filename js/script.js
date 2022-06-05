@@ -3,18 +3,19 @@ const lowCaseChars = ['ABCDEFGHIJKLMNOPRSTUVWZYX'];
 const capitalCaseChars = ['abcdefghijklmnoprstuvwzyx'];
 const numberChars = ['1 2 3 4 5 6 7 8 9 0'];
 const symbolChars = ['!#¤%&/()=?*@£${[]}'];
+const allChars = lowCaseChars + capitalCaseChars + numberChars + symbolChars;
 let passOne = document.getElementById('pass-1');
 let passTwoo = document.getElementById('pass-2');
 let passTree = document.getElementById('pass-3');
 let passFour = document.getElementById('pass-4');
-const allChars = lowCaseChars + capitalCaseChars + numberChars + symbolChars;
+const btnEl = document.getElementById('btn');
 // Writing pass to H1 element
-function writePassword() {
+btnEl.addEventListener('click', function() {
   passOne.textContent = generatePassword();
   passTwoo.textContent = generatePassword();
   passTree.textContent = generatePassword();
   passFour.textContent = generatePassword();
-}
+} );
 //Generating random letter, stor in var password
 function generatePassword() {
   let password = '';
